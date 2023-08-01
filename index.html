@@ -43,10 +43,21 @@
         }
         return true;
     }
+function display()
+{
+	let Name,Email,Zip;
+	fname= document.getElementById('Name').value;
+	lname= document.getElementById('Email').value;
+	dob =document.getElementById('Zip').value;
+	document.writeln(Name);
+	document.writeln(Email);
+	document.writeln(Zip);
+}
 </script>
 </head>
 <body >
     <form  name = "myForm" onsubmit = "return(validate());" >
+        <form onsubmit="display()";>
         <table cellspacing = "2" cellpadding = "2" border = "1">
             <tr>
                 <td>Name</td>
